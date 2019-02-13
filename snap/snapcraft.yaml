@@ -7,11 +7,11 @@ grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs
 
 apps:
-  coolkey:
+  coolkey-kz6fittycent:
     command: coolkey
      
 parts: 
-  asdf:
+  coolkey-kz6fittycent:
     source: https://github.com/kz6fittycent/coolkey
     source-type: git
     plugin: autotools
