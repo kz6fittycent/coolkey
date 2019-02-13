@@ -1,0 +1,31 @@
+name: coolkey  # check to see if it's available
+version: git
+summary: I was bored... # 79 char long summary
+description: |
+  This is likely the dumbest thing you've ever installed. 
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
+
+apps:
+  coolkey:
+    command: coolkey
+     
+parts: 
+  asdf:
+    source: https://github.com/kz6fittycent/coolkey
+    source-type: git
+    plugin: autotools
+        
+    build-packages:
+      - libpcsclite-dev
+      - glibc-source
+      - gcc
+      - autoconf
+      - python-xlib
+      
+    stage-packages:
+      - libpcsclite-dev
+      - glibc-source
+      - gcc
+      - autoconf
+      - python-xlib
