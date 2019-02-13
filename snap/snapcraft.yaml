@@ -22,7 +22,7 @@ parts:
       - gcc
       - autoconf
       - python-xlib
-      - libzc-dev
+      - libzc4
       
     stage-packages:
       - libpcsclite-dev
@@ -30,4 +30,4 @@ parts:
       - gcc
       - autoconf
       - python-xlib
-      - libzc-dev
+      - libzc4
